@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer-Charn-Prediction</title>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            top: 0px;
+
+        }
+        h1{
+            letter-spacing: 0.03cm;
+            color: red;
+        }
+        .info{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            /* background-color: aliceblue; */
+            color: rgb(255, 255, 255);
+            /* width: 100%; */
+            /* margin-right: 25%; */
+            font-size: 18px;
+            margin-left: 20%;
+            margin-right: 20%;
+            text-align: center;
+        }
+        .label-class{
+            margin-bottom: 10px;
+        }
+        .div-form{
+            padding: 10px;
+            /* background-color: aliceblue; */
+            font-size: 18px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .widthhh{
+            width: 200px;
+        }
+        .Surname{
+            margin-left: 87px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <center>
+            <h1>Customer Charn Prediction</h1>
+        </center>
+
+        <p class="info">Please provide me the following information.</p>
+
+        <div class="div-form">
+            <form action="/pred", method="post">
+                <span style="margin-bottom: 20px; margin-top: 10px;">
+                    <!-- name -->
+                    <label class="label-class" for="Text-name">What is your Surname : </label>
+                    <input type="text" name="Text-name" placeholder="Jadhav" class="Surname widthhh">
+                    <br>
+                </span>
+
+                <span>
+                    <!-- Nationality -->
+                    <label for="Text-Nationality">What is your Geography : </label>
+                    <input type="text" name="Text-Nationality" placeholder="France" style="margin-left: 69px;" class="Nationality widthhh">
+                    <br>    
+                </span>
+
+                <span>
+                    <!-- Age -->
+                    <label for="Text-Age">What is your Age : </label>
+                    <input type="number" name="Text-Age" placeholder="19" style="margin-left: 121px;" class="Age widthhh">
+                    <br>
+                </span>
+
+                <span>
+                    <!-- Balance -->
+                    <label for="Text-Balance">What is your Balance : </label>
+                    <input type="number" name="Text-Balance" placeholder="28000" style="margin-left: 91px;" class="Balance widthhh">
+                    <br>
+                </span>
+
+                <span>
+                    <!-- Gender -->
+                    <label for="Text-Gender">What is your Gender F/M : </label>
+                    <input type="" name="Text-Gender" placeholder="M" style="margin-left: 60px;" class="Balance widthhh">
+                    <br>
+                </span>
+
+                <span>
+                    <!-- Number Of Product -->
+                    <label for="Text-Products">Number Of Product : </label>
+                    <input type="number" name="Text-Products" placeholder="8" style="margin-left: 102px;" class="Product widthhh">
+                    <br>
+                </span>
+                
+                <span>
+                    <!-- Have a Cradit Card -->
+                    <label for="Text-Card">Do you have a Cradit Card : </label>
+                    <input type="text" name="Text-Card" placeholder="Yes" style="margin-left: 51px;" class="Card widthhh">
+                    <br>
+                </span>
+                
+                <span><!-- CreditScore  -->
+                    <label for="Text-CreditScore">What is your CreditScore : </label>
+                    <input type="number" name="Text-CreditScore" placeholder="625" style="margin-left:61px" class="CreditScore widthhh">
+                    <br>
+                </span>
+                
+                <span>
+                    <!-- years customer is with  -->
+                    <label for="Text-years">No. of years customer is with : </label>
+                    <input type="number" name="Text-years" placeholder="1" style="margin-left: 33px;" class="years widthhh">
+                    <br>
+                </span>
+                
+                <span>
+                    <!-- Estimated Salary  -->
+                    <label for="Text-Salary">What is your Estimated Salary : </label>
+                    <input type="number" name="Text-Salary" placeholder="1000000" style="margin-left: 24px;" class="Salary widthhh">
+                    <br>
+                </span>
+                
+                <span>
+                    <!-- Is an Active Member  -->
+                    <label for="Text-Member">Are you an Active Member : </label>
+                    <input type="text" name="Text-Member" placeholder="Yes" style="margin-left: 48px;" class="Member widthhh">
+                    <br>
+                </span>
+
+                <input type="submit" value="submit">
+                
+            </form>
+        </div>
+
+        <div class="div-form">
+            {%if Message%}
+            <center>
+                <h2><b>{{Message}}</b></h2>
+            </center> 
+            {%endif%}
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Information for future Website...
+
+1. Family Name / Surname
+2. CreditScore
+3. Geography / Nationality
+   Gender
+4. Age
+5. Tessur (From how many years customer is with them)
+6. Balance
+7. Number Of Products (Number of bank products or fasality customer is using)
+8. Has Cradit Card
+   Is an Active Member.
+9. Estimated Salary
+
+
+
+Model's Accuracy...
+
+KNeighborsClassifier    : 0.758
+RandomForestClassifier  : 0.866
+LogisticRegression      : 0.7795
+LogisticRegressionCV    : 0.8
+MultinomialNB           : 0.548
+SVC                     : 0.7885
