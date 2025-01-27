@@ -89,9 +89,9 @@ The Random Forest Classifier was chosen as the primary model due to its:
 
 ## 📧 Contact
 
-**Rohit Chandrakant Jadhav** - rcjadhav005@gmail.com
-Project Link: [https://github.com/yourusername/customer-churn-prediction](https://github.com/yourusername/customer-churn-prediction)
-Linked-In: [https://www.linkedin.com/in/rohit-jadhav-5a29a51ba/]
+- **Rohit Chandrakant Jadhav** - rcjadhav005@gmail.com
+- Project Link: [https://github.com/yourusername/customer-churn-prediction](https://github.com/yourusername/customer-churn-prediction)
+- Linked-In: [https://www.linkedin.com/in/rohit-jadhav-5a29a51ba/]
 
 ## 🙏 Acknowledgments
 
